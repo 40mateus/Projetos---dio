@@ -1,25 +1,26 @@
-function determinarNivel(nome, xp) {
-    let nivel;
+let nomeHeroi = "Batman"
+let xpHeroi = "7500"
 
-    if (xp < 1000) {
-        nivel = "Ferro";
-    } else if (xp >= 1001 && xp <= 2000) {
-        nivel = "Bronze";
-    } else if (xp >= 2001 && xp <= 5000) {
-        nivel = "Prata";
-    } else if (xp >= 5001 && xp <= 7000) {
-        nivel = "Ouro";
-    } else if (xp >= 7001 && xp <= 8000) {
-        nivel = "Platina";
-    } else if (xp >= 8001 && xp <= 9000) {
-        nivel = "Ascendente";
-    } else if (xp >= 9001 && xp <= 10000) {
-        nivel = "Imortal";
-    } else {
-        nivel = "Radiante";
-    }
-
-    // Exibir mensagem
-    console.log(`O Herói de nome ${nome} está no nível de ${nivel}`);
+if (xpHeroi < 1000){
+    nivel = "Ferro"
+} else if (xpHeroi => 1001 && xpHeroi <= 2000){
+    nivel = "Bronze"
+} else if ( xpHeroi >= 2001 && xpHeroi <= 5000){
+    nivel = "Prata"
+} else if ( xpHeroi >= 5001 && xpHeroi <= 7000){
+    nivel= "ouro"
+} else if ( xpHeroi >= 7001 && xpHeroi <= 8000){
+    nivel = "Platina"
+} else if ( xpHeroi >= 8001 && xpHeroi <= 9000){
+    nivel = "Ascentedente"
+} else if ( xpHeroi >= 9001 && xpHeroi <= 10000){
+    nivel = "Imortal"
+} else {
+    nivel = "Radiante"
 }
+
+console.log ("" + nomeHeroi + "" + nivel)
+
+
+
 
