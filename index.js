@@ -1,4 +1,5 @@
 function calcularRank(vitorias, derrotas){
+    return vitorias - derrotas
 }
 
 let saldoVitorias = 20 - 5
@@ -19,6 +20,7 @@ if(saldoVitorias < 10){
 } else if (saldoVitorias >= 101){
     nivel = "Imortal"
 }
+
 
    
 console.log("O Heroi tem de saldo " +  saldoVitorias + "" + " Vitorias e está no nível de "  + nivel)
