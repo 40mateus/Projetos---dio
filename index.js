@@ -1,26 +1,28 @@
-let nomeHeroi = "Batman"
-let xpHeroi = "7500"
-
-if (xpHeroi < 1000){
-    nivel = "Ferro"
-} else if (xpHeroi => 1001 && xpHeroi <= 2000){
-    nivel = "Bronze"
-} else if ( xpHeroi >= 2001 && xpHeroi <= 5000){
-    nivel = "Prata"
-} else if ( xpHeroi >= 5001 && xpHeroi <= 7000){
-    nivel= "ouro"
-} else if ( xpHeroi >= 7001 && xpHeroi <= 8000){
-    nivel = "Platina"
-} else if ( xpHeroi >= 8001 && xpHeroi <= 9000){
-    nivel = "Ascentedente"
-} else if ( xpHeroi >= 9001 && xpHeroi <= 10000){
-    nivel = "Imortal"
-} else {
-    nivel = "Radiante"
+function calcularRank(vitorias, derrotas){
 }
 
-console.log ("" + nomeHeroi + "" + nivel)
+let saldoVitorias = 20 - 5
+let nivel = ""
 
+if(saldoVitorias < 10){
+    nivel = "Ferro"
+} else if (saldoVitorias >= 11 && saldoVitorias <= 20){
+    nivel = "Bronze"
+} else if(saldoVitorias >= 21 && saldoVitorias <= 50){
+    nivel = "Prata"
+} else if(saldoVitorias >= 51 && saldoVitorias <= 80){
+    nivel = "Ouro"
+} else if(saldoVitorias >= 81 && saldoVitorias <= 90){
+    nivel = "Diamante"
+} else if(saldoVitorias >= 91 && saldoVitorias <= 100){
+    nivel = "Lendario"
+} else if (saldoVitorias >= 101){
+    nivel = "Imortal"
+}
+
+   
+console.log("O Heroi tem de saldo " +  saldoVitorias + "" + " Vitorias e está no nível de "  + nivel)
+  
 
 
 
