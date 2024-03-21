@@ -1,30 +1,41 @@
-function calcularRank(vitorias, derrotas){
-    return vitorias - derrotas
+// Definição da classe Gladiador
+class Gladiador {
+  constructor(nome, idade, tipo) {
+    this.nome = nome;
+    this.idade = idade;
+    this.tipo = tipo;
+  }
+
+  // Método para atacar
+  atacar() {
+    let ataque;
+
+    switch (this.tipo) {
+      case 'mago':
+        ataque = 'usou magia';
+        break;
+      case 'guerreiro':
+        ataque = 'espada';
+        break;
+      case 'monge':
+        ataque = 'usou artes marciais';
+        break;
+      case 'ninja':
+        ataque = 'usou shuriken';
+        break;
+      default:
+        ataque = 'usou ataque genérico';
+    }
+
+    console.log(`O ${this.tipo} ${this.nome} atacou usando ${ataque}`);
+  }
 }
 
-let saldoVitorias = 20 - 5
-let nivel = ""
+// Criação de um gladiador
+const meuGladiador = new Gladiador('Gladiador', 25, 'guerreiro');
 
-if(saldoVitorias < 10){
-    nivel = "Ferro"
-} else if (saldoVitorias >= 11 && saldoVitorias <= 20){
-    nivel = "Bronze"
-} else if(saldoVitorias >= 21 && saldoVitorias <= 50){
-    nivel = "Prata"
-} else if(saldoVitorias >= 51 && saldoVitorias <= 80){
-    nivel = "Ouro"
-} else if(saldoVitorias >= 81 && saldoVitorias <= 90){
-    nivel = "Diamante"
-} else if(saldoVitorias >= 91 && saldoVitorias <= 100){
-    nivel = "Lendario"
-} else if (saldoVitorias >= 101){
-    nivel = "Imortal"
-}
-
-
-   
-console.log("O Heroi tem de saldo " +  saldoVitorias + "" + " Vitorias e está no nível de "  + nivel)
-  
+// Chamada do método atacar
+meuGladiador.atacar();
 
 
 
